@@ -92,40 +92,17 @@ h4{
     flex-direction: column;
     align-items: center;    
     margin-left: 16px;
+    border: 4px solid white;
+    box-shadow: 1px 2px 2px 2px  rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 
 .different{
     margin-left: 0;
 }
 
-.firstscroll > :nth-child(1){
-    box-shadow: 1px 2px 2px 2px  rgba(0, 0, 0, 0.25);
-    border:5px solid white;
-    cursor: pointer;
-}
-
-.firstscroll > :nth-child(2){
-    box-shadow: 1px 2px 2px 2px  rgba(0, 0, 0, 0.25);
-    border:5px solid white;
-    cursor: pointer;
-}
-
-.firstscroll > :nth-child(3){
-    box-shadow: 1px 2px 2px 2px  rgba(0, 0, 0, 0.25);
-    border:5px solid white;
-    cursor: pointer;
-}
-
-.firstscroll > :nth-child(4){
-    box-shadow: 1px 2px 2px 2px  rgba(0, 0, 0, 0.25);
-    border:5px solid white;
-    cursor: pointer;
-}
-
-.firstscroll > :nth-child(5){
-    box-shadow: 1px 2px 2px 2px  rgba(0, 0, 0, 0.25);
-    border:5px solid white;
-    cursor: pointer;
+.greenborder{
+    border:4px solid #32B72F;
 }
 
 .menu img{
@@ -135,7 +112,6 @@ h4{
     object-fit: cover;
     padding: 10px 5px;
 }
-
 
 .food{
     width: 100%;
@@ -160,8 +136,9 @@ h4{
 }
 
 .iconfather{
-    background-color: white;
     border-radius: 100%;
+    background-color: #32B72F;
+    display: none;
 }
 
 .icon{
@@ -196,7 +173,6 @@ h4{
     width: 100%;
     height: 92px;
     background-color:#FFFFFF;
-   
     position: relative;
 }
 
@@ -210,7 +186,7 @@ h4{
     cursor: pointer;
 }
 
-button{
+.button{
     width: 364px;
     height: 61px;
     background-color: #CBCBCB;
@@ -223,5 +199,9 @@ button{
     right: 23px;    
     top:15px; 
     cursor: pointer;
+}
+
+.hidden{
+    background-color:#32B72F;
 }
 
