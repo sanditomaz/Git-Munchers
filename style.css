@@ -135,10 +135,14 @@ h4{
     padding: 0px 8px;
 }
 
-.iconfather{
+.green-ic{
     border-radius: 100%;
     background-color: #32B72F;
-    display: none;
+}
+
+.iconfather{
+    border-radius: 100%;
+    background-color: white;
 }
 
 .icon{

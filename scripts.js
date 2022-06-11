@@ -1,41 +1,49 @@
 let chosenmeal;
 let chosenbeverage;
 let chosendessert;
+let price;
 
 function selectedMeal(element){
-    chosenmeal = element.innerHTML;
     const selected = document.querySelector(".meal .greenborder");
+    const grennicon = document.querySelector(".meal .greenborder .icon");
     
     if(selected !== null){
         selected.classList.remove("greenborder");
+        greenicon.classList.remove("iconfather");
+        greenicon.classList.add("green-ic");
+    }else{
+        greenicon.classList.add("iconfather");
+        greenicon.classList.remove("green-ic");
     }
     element.classList.add("greenborder");
+    
+    chosenmeal = element.innerHTML;
 
-    releaseToFinishOrder()
+    releaseToFinishOrder();
 }
 
 function selectedBeverages(element){
-    chosenbeverage = element.innerHTML;
     const selected = document.querySelector(".beverage .greenborder");
     
     if(selected !== null){
         selected.classList.remove("greenborder");
     }
     element.classList.add("greenborder");
+    chosenbeverage = element.innerHTML;
 
-    releaseToFinishOrder()
+    releaseToFinishOrder();
 }
 
 function selectedDesserts(element){
-    chosendessert = element.innerHTML;
     const selected = document.querySelector(".dessert .greenborder");
     
     if(selected !== null){
         selected.classList.remove("greenborder");
     }
     element.classList.add("greenborder");
+    chosendessert = element.innerHTML;
 
-    releaseToFinishOrder()
+    releaseToFinishOrder();
 }
 
 function releaseToFinishOrder(){
@@ -46,3 +54,4 @@ function releaseToFinishOrder(){
         button.innerHTML = "Submit Your Order";
     }
 }
+
