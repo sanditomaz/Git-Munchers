@@ -18,385 +18,393 @@
 </head>
 
 <body>
-
-
-    <!-- <div class="confirm">
-        <h3>Confirm Delivery</h3>
-        <div>
-            <h5>meal</h5>
-            <div>preço</div>
-        </div>
-        <div>
-            <<h5>meal</h5>
-            <div>preço</div>
-        </div>
-        <div>
-            <h5>meal</h5>
-            <div>preço</div>
-        </div>
-        <div>
-            <h3>Total</h3>
-        </div>
-        <div>
-            <h3>valor</h3>
-        </div>
-        <div>
-            <div>Tudo certo</div>
-        </div>
-        <div>
-            <div>cancelar</div>
-        </div>
-
-
-    </div> -->
-
-
-    <div class="teste">
-            <div class="top">
-                <div><h1>Git Munchers</h1></div>
-                <div><pre><h4>Your food ready in 6 minutes</h4></pre></div>
-            </div>
-
-        <div class="maindish">
+    <div class="layer hidden">
                 
-                <!-- Choose your Meal starts here-->
-
-                    <div class="pickyourfood">
-
-                        <div><h2>First, choose your meal</h2></div>
-
-                        <div class="firstscroll">
-                            <div class="meal">
-                                <div class="menu different" onclick="selectedMeal(this)">
-                                    <div>
-                                        <img src="img/shishkebabs.png">
-                                    </div>
-                                    <div class="food">
-                                        <p class="savor">Shish Kebabs</p>
-                                    </div>
-                                    <div class="description">
-                                    <p>This delicious dish is served with fresh vegetables.</p>
-                                    </div>
-
-                                    <div class="sidebyside">
-                                        <div class="price">$12.00</div>
-                                        <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></div></div>
-                                    </div>
-
+                
+                        <div class="confirm">
+                                <div class="fromh3">
+                                    <h3>Check your order</h3>
                                 </div>
+                                <div class="straight">
+                                    <div class="meal">meal</div>
+                                    <div class="confirm-meal-price">price</div>
+                                </div>
+                                <div class="straight">
+                                    <div class="beverage">beverage</div>
+                                    <div class="confirm-beverage-price">price</div>
+                                </div>
+                                <div class="straight">
+                                    <div class="dessert">dessert</div>
+                                    <div class="confirm-dessert-price">price</div>
+                                </div>
+                                <div class="straight">
+                                    <div class="totalprice">TOTAL</div>
+                                    <div class="priceof-totalprice">value</div>
+                                </div>
+                                <div class="bottompart">
+                                    
+                                <div class="bottom-column">
+                                    <div class="allgood-button">
+                                        <h4 onclick="finallySubmit()">Ok, confirm delivery!</h4>
+                                    </div>
+                                    <div>
+                                        <h6 onclick="canceling()">Cancel</h6>
+                                    </div>
+                                </div> 
+                            </div>  
+                        </div>      
+                    
+               
+    </div>
+
+    <!-- layer ABOVE-->
+
+                    <div class="teste">
+                            <div class="top">
+                                <div><h1>Git Munchers</h1></div>
+                                <div><pre><h4>Your food ready in 6 minutes</h4></pre></div>
                             </div>
 
-                            <div class="meal">
-                                <div class="menu" onclick="selectedMeal(this)">
-                                    <div>
-                                        <img src="img/Chicken-Shawarma.png">
-                                    </div>
-                                    <div class="food">
-                                        <p class="savor">Chicken Shawarma</p>
-                                    </div>
-                                    <div class="description">
-                                    <p>This dish is served with garlic sauce and yogurt.</p>
+                        <div class="maindish">
+                                
+                                <!-- Choose your Meal starts here-->
+
+                                    <div class="pickyourfood">
+
+                                        <div><h2>First, choose your meal</h2></div>
+
+                                        <div class="firstscroll">
+                                            <div class="meal">
+                                                <div class="menu different" onclick="selectedMeal(this)">
+                                                    <div>
+                                                        <img src="img/shishkebabs.png">
+                                                    </div>
+                                                    <div class="food">
+                                                        <p class="savor">Shish Kebabs</p>
+                                                    </div>
+                                                    <div class="description">
+                                                    <p>This delicious dish is served with fresh vegetables.</p>
+                                                    </div>
+
+                                                    <div class="sidebyside">
+                                                        <div class="price">$12.00</div>
+                                                        <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></div></div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="meal">
+                                                <div class="menu" onclick="selectedMeal(this)">
+                                                    <div>
+                                                        <img src="img/Chicken-Shawarma.png">
+                                                    </div>
+                                                    <div class="food">
+                                                        <p class="savor">Chicken Shawarma</p>
+                                                    </div>
+                                                    <div class="description">
+                                                    <p>This dish is served with garlic sauce and yogurt.</p>
+                                                    </div>
+
+                                                    <div class="sidebyside">
+                                                        <div class="price">$10.00</div>
+                                                        <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                            <div class="meal">
+                                                <div class="menu" onclick="selectedMeal(this)">
+                                                    <div>
+                                                        <img src="img/Hummus.png">
+                                                    </div>
+                                                    <div class="food">
+                                                        <p class="savor">Hummus</p>
+                                                    </div>
+                                                    <div class="description">
+                                                    <p>This dish is served with homemade pita bread.</p>
+                                                    </div>
+
+                                                    <div class="sidebyside">
+                                                        <div class="price">$8.00</div>
+                                                        <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                            <div class="meal">
+                                                <div class="menu" onclick="selectedMeal(this)">
+                                                    <div>
+                                                        <img src="img/tabbouleh.png">
+                                                    </div>
+                                                    <div class="food">
+                                                        <p class="savor">Tabbouleh</p>
+                                                    </div>
+                                                    <div class="description">
+                                                    <p>This delightful dish is served with greek sauce.</p>
+                                                    </div>
+
+                                                    <div class="sidebyside">
+                                                        <div class="price">$11.00</div>
+                                                        <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="meal">
+                                                <div class="menu" onclick="selectedMeal(this)">
+                                                    <div>
+                                                        <img src="img/FalafelSandwich.png">
+                                                    </div>
+                                                    <div class="food" >
+                                                        <p class="savor">Falafel Sandwich</p>
+                                                    </div>
+                                                    <div class="description">
+                                                    <p>Delicious falafel sandwich with goat cheese.</p>
+                                                    </div>
+
+                                                    <div class="sidebyside">
+                                                        <div class="price">$18.00</div>
+                                                        <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
-                                    <div class="sidebyside">
-                                        <div class="price">$10.00</div>
-                                        <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
-                                    </div>
+                        <!--Choose your Beverage starts here-->
 
+                                    <div class="pickyourfood">
+
+                                            <div><h2>Now, choose your beverage</h2></div>
+
+                                        <div class="firstscroll">
+                                            <div  class=" beverage"> 
+                                                <div class="menu different" onclick="selectedBeverages(this)">
+                                                    <div>
+                                                        <img src="img/blueberrysmoothie.png">
+                                                    </div>
+                                                    <div class="food">
+                                                        <p class="savor">Blueberry Smoothie</p>
+                                                    </div>
+                                                    <div class="description">
+                                                    <p>Fresh and delicious blueberry smoothie topped with fruits.</p>
+                                                    </div>
+
+                                                    <div class="sidebyside">
+                                                        <div class="price">$5.00</div>
+                                                        <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        <div class=" beverage">
+                                                <div class="menu" onclick="selectedBeverages(this)">
+                                                    <div>
+                                                        <img src="img/cherry smoothie.png">
+                                                    </div>
+                                                    <div class="food">
+                                                        <p class="savor">Cherry Smoothie</p>
+                                                    </div>
+                                                    <div class="description">
+                                                    <p>Fresh cherry smoothie with almond milk.</p>
+                                                    </div>
+
+                                                    <div class="sidebyside">
+                                                        <div class="price">$4.00</div>
+                                                        <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div  class=" beverage">
+                                                <div class="menu" onclick="selectedBeverages(this)">
+                                                    <div>
+                                                        <img src="img/strawberrybubbletea.png">
+                                                    </div>
+                                                    <div class="food">
+                                                        <p class="savor">Strawberry Bubble Tea</p>
+                                                    </div>
+                                                    <div class="description">
+                                                    <p>Yummy strawberry bubble tea.</p>
+                                                    </div>
+
+                                                    <div class="sidebyside">
+                                                        <div class="price">$7.00</div>
+                                                        <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="beverage">
+                                                <div class="menu" onclick="selectedBeverages(this)">
+                                                    <div>
+                                                        <img src="img/orangesmoothie.png">
+                                                    </div>
+                                                    <div class="food">
+                                                        <p class="savor">Orange Smoothie</p>
+                                                    </div>
+                                                    <div class="description">
+                                                    <p>Fresh orange smoothie with cinnamon.</p>
+                                                    </div>
+
+                                                    <div class="sidebyside">
+                                                        <div class="price">$3.00</div>
+                                                        <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="beverage">
+                                                <div class="menu" onclick="selectedBeverages(this)">
+                                                    <div>
+                                                        <img src="img/swisslemonade.png">
+                                                    </div>
+                                                    <div class="food">
+                                                        <p class="savor">Swiss Lemonade</p>
+                                                    </div>
+                                                    <div class="description">
+                                                    <p>Fresh and Creamy Brazilian swiss lemonade.</p>
+                                                    </div>
+
+                                                    <div class="sidebyside">
+                                                        <div class="price">$2.00</div>
+                                                        <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
                                 </div>
-                            </div>
 
+                        <!--Choose your dessert starts here-->
 
-                            <div class="meal">
-                                <div class="menu" onclick="selectedMeal(this)">
-                                    <div>
-                                        <img src="img/Hummus.png">
-                                    </div>
-                                    <div class="food">
-                                        <p class="savor">Hummus</p>
-                                    </div>
-                                    <div class="description">
-                                    <p>This dish is served with homemade pita bread.</p>
-                                    </div>
+                                        <div class="pickyourfood">
 
-                                    <div class="sidebyside">
-                                        <div class="price">$8.00</div>
-                                        <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
-                                    </div>
+                                                <div><h2>Finally, choose your dessert</h2></div>
+                            
+                                            <div class="firstscroll">
 
-                                </div>
-                            </div>
+                                                <div class="dessert">
+                                                    <div class="menu different" onclick="selectedDesserts(this)">
+                                                        <div>
+                                                            <img src="img/blueberryFrozenYogurt.png">
+                                                        </div>
+                                                        <div class="food">
+                                                            <p class="savor">Blueberry Frozen Yogurt</p>
+                                                        </div>
+                                                        <div class="description">
+                                                        <p>Yummy blueberry frozen yogurt.</p>
+                                                        </div>
+                                
+                                                        <div class="sidebyside">
+                                                            <div class="price">$21.00</div>
+                                                            <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
+                                                        </div>
+                                
+                                                    </div>
+                                                </div>
 
+                            
+                                                <div class="dessert">
+                                                    <div class="menu" onclick="selectedDesserts(this)">
+                                                        <div>
+                                                            <img src="img/strawberryFrozenYogurt.png">
+                                                        </div>
+                                                        <div class="food">
+                                                            <p class="savor">Strawberry Frozen Yogurt</p>
+                                                        </div>
+                                                        <div class="description">
+                                                        <p>Yummy strawberry frozen yogurt.</p>
+                                                        </div>
+                                
+                                                        <div class="sidebyside">
+                                                            <div class="price">$22.00</div>
+                                                            <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
+                                                        </div>
+                                
+                                                    </div>
+                                                </div>
 
-                            <div class="meal">
-                                <div class="menu" onclick="selectedMeal(this)">
-                                    <div>
-                                        <img src="img/tabbouleh.png">
-                                    </div>
-                                    <div class="food">
-                                        <p class="savor">Tabbouleh</p>
-                                    </div>
-                                    <div class="description">
-                                    <p>This delightful dish is served with greek sauce.</p>
-                                    </div>
+                                                <div class="dessert">
+                                                    <div class="menu" onclick="selectedDesserts(this)">
+                                                        <div>
+                                                            <img src="img/chocolate-frozenyogurt.png">
+                                                        </div>
+                                                        <div class="food">
+                                                            <p class="savor">Chocolate Frozen Yogurt</p>
+                                                        </div>
+                                                        <div class="description">
+                                                        <p>Yummy chocolate frozen yogurt</p>
+                                                        </div>
+                                
+                                                        <div class="sidebyside">
+                                                            <div class="price">$19.00</div>
+                                                            <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
+                                                        </div>
+                                
+                                                    </div>
+                                                </div>
 
-                                    <div class="sidebyside">
-                                        <div class="price">$11.00</div>
-                                        <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
-                                    </div>
+                                                <div class="dessert">
+                                                    <div class="menu" onclick="selectedDesserts(this)">
+                                                        <div>
+                                                            <img src="img/lemonFrozenYogurt.png">
+                                                        </div>
+                                                        <div class="food">
+                                                            <p class="savor">Lemon Frozen Yogurt</p>
+                                                        </div>
+                                                        <div class="description">
+                                                        <p>Yummy lemon frozen yogurt.</p>
+                                                        </div>
+                                
+                                                        <div class="sidebyside">
+                                                            <div class="price">$23.00</div>
+                                                            <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
+                                                        </div>
+                                
+                                                    </div>
+                                                </div>
 
-                                </div>
-                            </div>
+                                                <div class="dessert">
+                                                    <div class="menu" onclick="selectedDesserts(this)">
+                                                        <div>
+                                                            <img src="img/vanillaFrozenYogurt.png">
+                                                        </div>
+                                                        <div class="food">
+                                                            <p class="savor">Vanilla Frozen Yogurt</p>
+                                                        </div>
+                                                        <div class="description">
+                                                        <p>Yummy vanilla frozen yogurt</p>
+                                                        </div>
+                                
+                                                        <div class="sidebyside">
+                                                            <div class="price">$25.00</div>
+                                                            <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
 
-                            <div class="meal">
-                                <div class="menu" onclick="selectedMeal(this)">
-                                    <div>
-                                        <img src="img/FalafelSandwich.png">
-                                    </div>
-                                    <div class="food" >
-                                        <p class="savor">Falafel Sandwich</p>
-                                    </div>
-                                    <div class="description">
-                                    <p>Delicious falafel sandwich with goat cheese.</p>
-                                    </div>
-
-                                    <div class="sidebyside">
-                                        <div class="price">$18.00</div>
-                                        <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                    </div>
 
-         <!--Choose your Beverage starts here-->
-
-                    <div class="pickyourfood">
-
-                            <div><h2>Now, choose your beverage</h2></div>
-
-                        <div class="firstscroll">
-                            <div  class=" beverage"> 
-                                <div class="menu different" onclick="selectedBeverages(this)">
-                                    <div>
-                                        <img src="img/blueberrysmoothie.png">
-                                    </div>
-                                    <div class="food">
-                                        <p class="savor">Blueberry Smoothie</p>
-                                    </div>
-                                    <div class="description">
-                                    <p>Fresh and delicious blueberry smoothie topped with fruits.</p>
-                                    </div>
-
-                                    <div class="sidebyside">
-                                        <div class="price">$5.00</div>
-                                        <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
-                                    </div>
-
-                                </div>
+                        <div class="testetwo">
+                            <div class="finish-order">
+                                <button class="button" type="submit" style="border:none;" onclick="submitOrder()">Select at least 3 items </br>to finish your order</button>
                             </div>
-
-                           <div class=" beverage">
-                                <div class="menu" onclick="selectedBeverages(this)">
-                                    <div>
-                                        <img src="img/cherry smoothie.png">
-                                    </div>
-                                    <div class="food">
-                                        <p class="savor">Cherry Smoothie</p>
-                                    </div>
-                                    <div class="description">
-                                    <p>Fresh cherry smoothie with almond milk.</p>
-                                    </div>
-
-                                    <div class="sidebyside">
-                                        <div class="price">$4.00</div>
-                                        <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div  class=" beverage">
-                                <div class="menu" onclick="selectedBeverages(this)">
-                                    <div>
-                                        <img src="img/strawberrybubbletea.png">
-                                    </div>
-                                    <div class="food">
-                                        <p class="savor">Strawberry Bubble Tea</p>
-                                    </div>
-                                    <div class="description">
-                                    <p>Yummy strawberry bubble tea.</p>
-                                    </div>
-
-                                    <div class="sidebyside">
-                                        <div class="price">$7.00</div>
-                                        <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="beverage">
-                                <div class="menu" onclick="selectedBeverages(this)">
-                                    <div>
-                                        <img src="img/orangesmoothie.png">
-                                    </div>
-                                    <div class="food">
-                                        <p class="savor">Orange Smoothie</p>
-                                    </div>
-                                    <div class="description">
-                                    <p>Fresh orange smoothie with cinnamon.</p>
-                                    </div>
-
-                                    <div class="sidebyside">
-                                        <div class="price">$3.00</div>
-                                        <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-
-
-                            <div class="beverage">
-                                <div class="menu" onclick="selectedBeverages(this)">
-                                    <div>
-                                        <img src="img/swisslemonade.png">
-                                    </div>
-                                    <div class="food">
-                                        <p class="savor">Swiss Lemonade</p>
-                                    </div>
-                                    <div class="description">
-                                    <p>Fresh and Creamy Brazilian swiss lemonade.</p>
-                                    </div>
-
-                                    <div class="sidebyside">
-                                        <div class="price">$2.00</div>
-                                        <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                   </div>
-
-         <!--Choose your dessert starts here-->
-
-                        <div class="pickyourfood">
-
-                                <div><h2>Finally, choose your dessert</h2></div>
-            
-                            <div class="firstscroll">
-
-                                <div class="dessert">
-                                    <div class="menu different" onclick="selectedDesserts(this)">
-                                        <div>
-                                            <img src="img/blueberryFrozenYogurt.png">
-                                        </div>
-                                        <div class="food">
-                                            <p class="savor">Blueberry Frozen Yogurt</p>
-                                        </div>
-                                        <div class="description">
-                                        <p>Yummy blueberry frozen yogurt.</p>
-                                        </div>
-                
-                                        <div class="sidebyside">
-                                            <div class="price">$21.00</div>
-                                            <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
-                                        </div>
-                
-                                    </div>
-                                </div>
-
-            
-                                <div class="dessert">
-                                    <div class="menu" onclick="selectedDesserts(this)">
-                                        <div>
-                                            <img src="img/strawberryFrozenYogurt.png">
-                                        </div>
-                                        <div class="food">
-                                            <p class="savor">Strawberry Frozen Yogurt</p>
-                                        </div>
-                                        <div class="description">
-                                        <p>Yummy strawberry frozen yogurt.</p>
-                                        </div>
-                
-                                        <div class="sidebyside">
-                                            <div class="price">$22.00</div>
-                                            <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
-                                        </div>
-                
-                                    </div>
-                                </div>
-
-                                <div class="dessert">
-                                    <div class="menu" onclick="selectedDesserts(this)">
-                                        <div>
-                                            <img src="img/chocolate-frozenyogurt.png">
-                                        </div>
-                                        <div class="food">
-                                            <p class="savor">Chocolate Frozen Yogurt</p>
-                                        </div>
-                                        <div class="description">
-                                        <p>Yummy chocolate frozen yogurt</p>
-                                        </div>
-                
-                                        <div class="sidebyside">
-                                            <div class="price">$19.00</div>
-                                            <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
-                                        </div>
-                
-                                    </div>
-                                </div>
-
-                                <div class="dessert">
-                                    <div class="menu" onclick="selectedDesserts(this)">
-                                        <div>
-                                            <img src="img/lemonFrozenYogurt.png">
-                                        </div>
-                                        <div class="food">
-                                            <p class="savor">Lemon Frozen Yogurt</p>
-                                        </div>
-                                        <div class="description">
-                                        <p>Yummy lemon frozen yogurt.</p>
-                                        </div>
-                
-                                        <div class="sidebyside">
-                                            <div class="price">$23.00</div>
-                                            <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
-                                        </div>
-                
-                                    </div>
-                                </div>
-
-                                <div class="dessert">
-                                    <div class="menu" onclick="selectedDesserts(this)">
-                                        <div>
-                                            <img src="img/vanillaFrozenYogurt.png">
-                                        </div>
-                                        <div class="food">
-                                            <p class="savor">Vanilla Frozen Yogurt</p>
-                                        </div>
-                                        <div class="description">
-                                        <p>Yummy vanilla frozen yogurt</p>
-                                        </div>
-                
-                                        <div class="sidebyside">
-                                            <div class="price">$25.00</div>
-                                            <div class="green-ic hidden"><div class="icon"><ion-icon name="checkmark-outline"></ion-icon></ion-icon></div></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-
-        </div>
-
-        <div class="testetwo">
-            <div class="finish-order">
-                <button class="button" type="submit" style="border:none;" onclick="submitOrder()">Select at least 3 items </br>to finish your order</button>
-            </div>
-        </div>  
-   </div>  
+                        </div>  
+                </div>  
  
 
 <script src="scripts.js"></script>
