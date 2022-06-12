@@ -31,14 +31,22 @@ function selectedBeverages(element){
     const selected = document.querySelector(".beverage .greenborder");
     const icon = element.querySelector(".green-ic");
     const savory = element.querySelector(".savor");
+    const pricetag = element.querySelector(".price");
+    let newNumber;
     
     if(selected !== null){
         selected.classList.remove("greenborder");
         selected.querySelector(".green-ic").classList.add("hidden");
-        chosenbeverage = selected.querySelector(".savor");
+        chosenbeverage = selected.querySelector(".savor").innerHTML;
+        newNumber = selected.querySelector(".price").innerHTML;
     }
     icon.classList.remove("hidden");
     element.classList.add("greenborder");
+
+    priceBeverage= newNumber.replace(/[^0-9\.]+/g, "");
+
+    alert(chosenbeverage);
+    alert(priceBeverage);
 
     releaseToFinishOrder();
 }
@@ -47,15 +55,23 @@ function selectedDesserts(element){
     const selected = document.querySelector(".dessert .greenborder");
     const icon = element.querySelector(".green-ic");
     const savory = element.querySelector(".savor");
+    const pricetag = element.querySelector(".price");
+    let newNumber;
+    
     
     if(selected !== null){
         selected.classList.remove("greenborder");
         selected.querySelector(".green-ic").classList.add("hidden");
-        chosendessert = selected.querySelector(".savor");
+        chosendessert = selected.querySelector(".savor").innerHTML  ;
+        newNumber = selected.querySelector(".price").innerHTML;
     }
     icon.classList.remove("hidden");
     element.classList.add("greenborder");
 
+    priceDessert = newNumber.replace(/[^0-9\.]+/g, "");
+
+    alert(chosendessert);
+    alert(priceDessert);
 
     releaseToFinishOrder();
 }
@@ -69,3 +85,8 @@ function releaseToFinishOrder(){
     }
 }
 
+function submitOrder(){
+    total = priceMeal + priceBeverage + priceDessert;
+
+    let message = "Hi, I'd like to order:/n - Meal: ${`chosenmeal`} /n- Beverage: ${`chosenbeverage`}/n- Dessert: ${`chosendessert`} /n Total: $ ${`total`}";
+}
