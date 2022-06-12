@@ -132,7 +132,7 @@ h4{
 .sidebyside{
     display: flex;
     justify-content: space-around;
-    padding: 0px 8px;
+    padding: 0px 10px;
 }
 
 .green-ic{
@@ -140,10 +140,6 @@ h4{
     background-color: #32B72F;
 }
 
-.iconfather{
-    border-radius: 100%;
-    background-color: white;
-}
 
 .icon{
     color: white;
@@ -205,7 +201,11 @@ h4{
     cursor: pointer;
 }
 
-.hidden{
+.hiddentwo{
     background-color:#32B72F;
+}
+
+.hidden{
+    display: none;
 }
 
