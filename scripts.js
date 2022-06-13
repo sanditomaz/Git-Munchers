@@ -76,12 +76,14 @@ function releaseToFinishOrder(){
 }
 
 function submitOrder(){
+  
     total = priceMeal + priceBeverage + priceDessert;
-    finaltotal = '$' + total.toFixed(2);  
+    finaltotal = '$ ' + total.toFixed(2);  
 
+  if(priceMeal && priceBeverage && priceDessert){
     const layer = document.querySelector(".layer");
     layer.classList.remove("hidden");
-
+  };
     const firstmeal = document.querySelector(".straight .meal");
     firstmeal.innerHTML = chosenmeal;
 
